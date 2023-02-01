@@ -1,0 +1,226 @@
+.slideshow {
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+img, video {
+    height: auto;
+    max-width: max-content !important;
+}
+  
+.control {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  /* need to adjust sizing. added new pictures */
+  
+  /** SLIDESHOW **/
+/* .slideshow,
+.slideshow:after { 
+    top: -16px;
+} */
+
+#landingPage {
+    position: relative;
+    /* height:60%;
+    top: 200px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slideshow li span { 
+    position: fixed; 
+    display: flex;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 0px;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+  
+.slideshow li:nth-child(1) span { 
+    background-image: url("../images/acai\ bowl\ image.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.slideshow li:nth-child(2) span { 
+    background-image: url("../images/two\ plates\ of\ lobster\ image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 6s; 
+}
+
+.slideshow li:nth-child(3) span { 
+    background-image: url("../images/smoothie\ bowl\ image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* why did this one and only this one have "background-size" designated? */
+    /* background-size: auto; */
+    animation-delay: 12s; 
+}
+
+.slideshow li:nth-child(4) span { 
+    background-image: url("../images/omglul\ so\ random\ xD\ image.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 18s; 
+}
+
+.slideshow li:nth-child(5) span { 
+    background-image: url("../images/traditional\ thai\ appetizer\ image.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 24s; 
+}
+/* 
+.slideshow li:nth-child(6) span {
+    background-image: url("../images/healthy.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 30s;
+}
+
+.slideshow li:nth-child(7) span {
+    background-image: url("../images/smoothie\ bowl\ image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 36s;
+}
+
+.slideshow li:nth-child(8) span {
+    background-image: url("../images/omglul\ so\ random\ xD\ image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-delay: 42s;
+} */
+
+@keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+}
+  
+@keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+}
+  
+.no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+}
+
+/* new code */
+#whisp {
+    position: fixed;
+    opacity: 0.5;
+}
+
+/* find this */
+.titleContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   /* ruining title location */
+   /* bottom:65px; */
+}
+
+/* is this supposed to be for all buttons? */
+.HomeSubmitBtn {
+    position: relative;
+    color: black !important;
+    background-color: antiquewhite !important;
+    /* makes the button smaller than the text within it */
+    /* width: 20%; */
+}
+
+/* or is this supposed to be all buttons, with HomeSubmitBtn being different? */
+.button.is-link {
+    display: inline-block;
+    border-radius: 4px;
+    background-color:  lightgreen;
+    color: black;
+}
+
+.button.is-link:hover {
+    background-color: #304F6B !important; 
+    color: white !important;
+}
+
+.button.is-link.is-light {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(162, 202, 162);
+    color: black;
+}
+
+.button.is-link.is-light:hover {
+    background-color: teal !important;
+    color: white !important;
+}
+
+.title {
+    font-family: 'Aboreto', cursive;
+    /* you cannot apply two font-families to the same class */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 40px;
+    height: 100px;
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+
+.container {
+    background: #F9F7F3 ;
+    background-color: transparent;
+} 
+
+.subtitle {
+    height: 40px;
+    align-content: center;
+    /* ruining subtitle spacing */
+    /* bottom: 40px; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title.is-4 {
+    font-size: 1.5rem;
+    align-content: flex-start;
+    justify-content: left;
+}
+
+.subtitle.is-6 {
+    font-size: 1rem;
+    align-content: flex-start;
+    justify-content: left;
+}
