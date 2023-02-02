@@ -519,7 +519,7 @@ function populateFinalPage(youtubeLink, finalRecipe) {
 
     document.getElementById('recipename').innerHTML = `${finalrecipeName}`
 
-    document.getElementById('recipelink').innerHTML = `${finalrecipeURL}`
+    document.getElementById('recipelink').innerHTML = `<a href="${finalrecipeURL}">${finalrecipeURL}</a>`
 
     document.getElementById('recipeinfo').innerHTML = `This recipe for ${finalrecipeName} fits closely to your chosen preferences with a total calorie count of ${finalrecipeCalories}, carbohydrate content of ${finalrecipeCarbs}, fat content of ${finalrecipeFat}, and protein content of ${finalrecipeProtein}, as well as being within the diet you specified!`
 

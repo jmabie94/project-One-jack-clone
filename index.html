@@ -66,6 +66,11 @@
       <li class = "slidephoto"><span></span></li>
       <li class = "slidephoto"><span></span></li>
       <li class = "slidephoto"><span></span></li>
+      <li class = "slidephoto"><span></span></li>
+      <li class = "slidephoto"><span></span></li>
+      <li class = "slidephoto"><span></span></li>
+      <li class = "slidephoto"><span></span></li>
+      <li class = "slidephoto"><span></span></li>
     </ul>
   </section>
   
@@ -74,7 +79,7 @@
     <div class="field" id="UserName">
         <label class="label">Name</label>
         <div class="control">
-            <textarea class="input" rows="3" placeholder="Randy Randleman"></textarea>
+            <textarea class="input" rows="3" placeholder="Randy Randleman" type="text" optional></textarea>
         </div>
     </div>
 
@@ -82,7 +87,7 @@
     <div class="field" id="UserAge">
         <label class="label">Age</label>
         <div class="control">
-            <textarea class="input" rows="3" placeholder="74"></textarea>
+            <textarea class="input" rows="3" placeholder="74" type="text" optional></textarea>
         </div>
     </div>
 
@@ -90,7 +95,7 @@
     <div class="field" id="UserHeight">
         <label class="label">Height</label>
         <div class="control">
-            <textarea class="input" rows="3" placeholder="6'4"></textarea>
+            <textarea class="input" rows="3" placeholder="6'4" type="text" optional></textarea>
         </div>
     </div>
 
@@ -98,16 +103,18 @@
     <div class="field" id="UserCurrentWeight">
         <label class="label">Weight</label>
         <div class="control">
-            <textarea class="input" rows="3" placeholder="285"></textarea>
+            <textarea class="input" rows="3" placeholder="285" type="number" required></textarea>
         </div>
+        <p class="help is-danger">This field is required, please add numeric value!</p>
     </div>
 
     <!-- creates text input field for Weight -->
     <div class="field" id="UserIdealWeight">
         <label class="label">Ideal Weight</label>
         <div class="control">
-            <textarea class="input" rows="3" placeholder="240"></textarea>
+            <textarea class="input" rows="3" placeholder="240" type="number" required></textarea>
         </div>
+        <p class="help is-danger">This field is required, please add numeric value!</p>
     </div>
 
     <!-- creates dropdown menu for Gender -->
@@ -232,14 +239,16 @@
           <div class="media-content">
             <p class="title is-4" id="recipename">Recipe Name</p>
             <p class="subtitle is-6" id="recipelink">Recipe Link</p>
+            <p class="subtitle is-6" id="recipeinfo">Recipe Info</p>
+            <p class="subtitle is-6" id="recipeservings">Recipe servings</p>
           </div>
         </div>
-        <div class="content" id="recipeinfo">
+        <!-- <div class="content" id="recipeinfo">
           Some basic information about your resulting recipe, such as Calories, Carbs, Fats & Proteins
         </div>
         <div class="content" id="recipeservings">
           This recipe makes a certain number of servings
-        </div>
+        </div> -->
         <div class="field is-grouped">
           <div class="control">
           <button class="button is-link newRecipeBtn">Get New Recipe?</button>
